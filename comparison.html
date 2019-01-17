@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lattitude</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<!--Giving each div a different class in order to apply styles to them-->
+<!--
+  <div class="box box-1"></div>
+  <div class="box box-2"></div>
+  <div class="box box-3"></div>
+  <div class="box box-4"></div>
+  <div class="box box-5"></div>
+ -->
+<!-- Top Navigation Bar -->
+ <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+                <p style="padding:2px 6px 4px 6px; color: #FFFFFF; background-color: #46C7C7">
+                    <font size="5">
+                        Lattitude
+                    </font>
+                </p>
+        </a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="plots/temperature.html">Temperature</a></li>
+                <li><a href="plots/humidity.html">Humidity</a></li>
+                <li><a href="plots/cloudiness.html">Cloudiness</a></li>
+                <li><a href="plots/wind-speed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- START MAIN -->
+  <main>
+      <div class="container">
+        <div class="main main-comparison clearfix">
+          <div class="col-md-12">
+            <div class="content-header">
+              <h1>Comparison: Latitude vs. X</h1>
+              <span class="caption">Click on any plot to get an in-depth analysis.</span>
+            </div>  
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <section class="main-container">
+              <div class="main-header comparison-header">
+                <h4>vs. Max Temperature</h4>
+              </div>
+              <div class="main-content clearfix">
+                <a href="plots/temperature.html">
+                  <img src="Figures/Fig1.png" alt="Latitude vs Max Temp">
+                </a>
+              </div>
+            </section>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <section class="main-container">
+              <div class="main-header comparison-header">
+                <h4>vs. Humidity</h4>
+              </div>
+              <div class="main-content clearfix">
+                <a href="plots/humidity.html">
+                  <img src="Figures/Fig2.png" alt="Latitude vs Humidity">
+                </a>
+              </div>
+            </section>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <section class="main-container">
+              <div class="main-header comparison-header">
+                <h4>vs. Cloudiness</h4>
+              </div>
+              <div class="main-content clearfix">
+                <a href="plots/cloudiness.html">
+                  <img src="Figures/Fig3.png" alt="Latitude vs Cloudiness">
+                </a>
+              </div>
+            </section>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <section class="main-container">
+              <div class="main-header comparison-header">
+                <h4>vs. Wind Speed</h4>
+              </div>
+              <div class="main-content clearfix">
+                <a href="plots/wind-speed.html">
+                  <img src="Figures/Fig4.png" alt="Latitude vs Wind Speed">
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- END MAIN -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

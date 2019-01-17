@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lattitude</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<!--Giving each div a different class in order to apply styles to them-->
+<!--
+  <div class="box box-1"></div>
+  <div class="box box-2"></div>
+  <div class="box box-3"></div>
+  <div class="box box-4"></div>
+  <div class="box box-5"></div>
+ -->
+<!-- Top Navigation Bar -->
+ <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+                <p style="padding:2px 6px 4px 6px; color: #FFFFFF; background-color: #46C7C7">
+                    <font size="5">
+                        Lattitude
+                    </font>
+                </p>
+        </a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="plots/temperature.html">Temperature</a></li>
+                <li><a href="plots/humidity.html">Humidity</a></li>
+                <li><a href="plots/cloudiness.html">Cloudiness</a></li>
+                <li><a href="plots/wind-speed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<!-- Left Panel -->
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-8">
+        <div class="jumbotron">
+          <h1>Summary: Lattitude vs. X</h1>
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="Figures/Fig1.png" alt="fig">
+              </a>
+            </div>
+            <div class="media-body">
+              <p>
+                The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+              </p>
+              <p>
+                After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+<!-- Right Panel -->
+    <div class="col-md-4">
+      <h2>
+        Visualizations
+      </h2>
+      <div class="col-md-6 col-sm-3 col-xs-6">
+              <a href="plots/temperature.html" class="thumbnail">
+                <img src="Figures/Fig1.png" alt="Fig1">
+              </a>
+      </div>
+      <div class="col-md-6 col-sm-3 col-xs-6">
+          <a href="plots/humidity.html" class="thumbnail">
+            <img src="Figures/Fig2.png" alt="Fig2">
+          </a>
+      </div>
+      <div class="col-md-6 col-sm-3 col-xs-6">
+          <a href="plots/cloudiness.html" class="thumbnail">
+            <img src="Figures/Fig3.png" alt="Fig3">
+          </a>
+      </div>
+      <div class="col-md-6 col-sm-3 col-xs-6">
+          <a href="plots/wind-speed.html" class="thumbnail">
+            <img src="Figures/Fig4.png" alt="Fig4">
+          </a>
+      </div>
+    </div>     
+  </div> 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
